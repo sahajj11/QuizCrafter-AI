@@ -1,18 +1,32 @@
 import React from 'react';
 import { Zap, Mail, Lock, LogIn } from 'lucide-react';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPageConsistent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login attempt...');
     // Add your authentication logic here
+
   };
+
+  const navigate=useNavigate()
 
   return (
     <>
-    <Navbar />
+     <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
+          
+          {/* Left - Logo / App Name */}
+          <div onClick={()=>navigate("/")} className="flex items-center gap-2">
+            <Zap className="w-7 h-7 text-indigo-600" />
+            <h1 className="text-2xl font-bold text-indigo-600">
+              QuizCrafter <span className="text-gray-800">AI</span>
+            </h1>
+          </div>
+    
+          
+        </nav>
    
     <div className="flex flex-col items-center justify-center min-h-screen  text-white p-4">
         
@@ -90,21 +104,10 @@ const LoginPageConsistent = () => {
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-gray-600"></div>
           </div>
-          <div className="relative flex justify-center text-sm">
-            <span className="px-3 bg-gray-800 text-gray-500">
-              OR
-            </span>
-          </div>
+          
         </div>
 
-        {/* Social Sign-in Button */}
-        <button
-          type="button"
-          className="w-full flex items-center justify-center space-x-2 py-2 px-4 border border-gray-600 rounded-lg text-gray-300 bg-gray-700 
-                     hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-gray-800 transition duration-300"
-        >
-          
-        </button>
+       
 
         {/* Sign Up Link */}
         <p className="mt-8 text-center text-sm text-gray-400">
@@ -116,8 +119,7 @@ const LoginPageConsistent = () => {
       </div>
       
     </div>
-
-    <Footer />
+    
     </>
   );
 };

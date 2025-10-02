@@ -1,9 +1,11 @@
 import React from 'react';
 import quizSvg from "../assets/quiz.svg"
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Hero = () => {
+    const navigate=useNavigate()
   return (
     <section className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
@@ -18,7 +20,7 @@ const Hero = () => {
             Harness the power of AI to generate custom quizzes, tests, 
             and trivia in minutes, not hours.
           </p>
-          <button className="mt-8 px-6 py-3 bg-indigo-600 text-white rounded-lg text-lg font-medium hover:bg-blue-700 transition">
+          <button onClick={()=>navigate("/login")} className="mt-8 px-6 py-3 bg-indigo-600 text-white rounded-lg text-lg font-medium hover:bg-blue-700 transition">
             Get Started
           </button>
         </div>
