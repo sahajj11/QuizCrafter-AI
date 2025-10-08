@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Mail, Lock, LogIn } from 'lucide-react';
+import { Zap, Mail, Lock, LogIn, Link } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 
@@ -80,12 +80,7 @@ const LoginPageConsistent = () => {
             </div>
           </div>
 
-          {/* Action Row: Forgot Password */}
-          <div className="flex justify-end">
-            <a href="#" className="text-sm font-medium text-indigo-400 hover:text-indigo-300 transition duration-150">
-              Forgot password?
-            </a>
-          </div>
+          
 
           {/* Primary Login Button (Consistent with Landing Page CTA) */}
           <button
@@ -112,9 +107,9 @@ const LoginPageConsistent = () => {
         {/* Sign Up Link */}
         <p className="mt-8 text-center text-sm text-gray-400">
           New to QuizCrafter AI?
-          <a href="/signup" className="font-semibold text-indigo-400 hover:text-indigo-300 ml-1 transition duration-150">
+          <p onClick={()=>navigate("/register")} className="font-semibold mt-1 text-indigo-400 hover:text-indigo-300 ml-1 transition duration-150">
             Create an account
-          </a>
+          </p>
         </p>
       </div>
       

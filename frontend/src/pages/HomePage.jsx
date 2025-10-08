@@ -5,6 +5,9 @@ import Hero from '../components/Hero'
 import HowItWorks from '../components/HowItWorks'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
+import DashboardLayout from '../components/Test'
+
+import SignUp from './SignUp'
 
 const HomePage = () => {
   return (
@@ -15,6 +18,8 @@ const HomePage = () => {
     <HowItWorks />
     <Testimonials />
     <Footer />
+    
+   
     </>
   )
 }
