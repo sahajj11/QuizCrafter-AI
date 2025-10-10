@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import { Star } from 'lucide-react'; // Icon for the star rating
 
 const testimonialsData = [
@@ -9,13 +9,13 @@ const testimonialsData = [
     avatar: "/avatars/sarah.jpg", // Placeholder - replace with actual path
   },
   {
-    quote: "The analytics feature is brilliant. I can instantly pinpoint which topics my team is struggling with and adjust my training modules on the fly.",
+    quote: "The analytics feature is brilliant. I can instantl y pinpoint which topics my team is struggling with and adjust my training modules on the fly.",
     name: "Mark T.",
     title: "Corporate Trainer, TechCo",
     avatar: "/avatars/mark.jpg", // Placeholder
   },
-  {
-    quote: "Building engaging trivia for our community used to be a chore. Now, I just feed the AI my content and get perfectly structured, fun quizzes back. Highly recommended!",
+  {  
+    quote: "Building engaging trivia for our community used to be a chore. Now, I  just feed the AI my content and get perfectly structured, fun quizzes back. Highly recommended!",
     name: "Alex B.",
     title: "Content Creator",
     avatar: "/avatars/alex.jpg", // Placeholder
@@ -68,7 +68,7 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> 
     </section>
   );
 };
