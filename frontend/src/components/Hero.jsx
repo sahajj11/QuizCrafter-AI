@@ -20,8 +20,8 @@ const Hero = () => {
             Harness the power of AI to generate custom quizzes, tests, 
             and trivia in minutes, not hours.
           </p>
-          <button onClick={()=>navigate("/login")} className="mt-8 px-6 py-3 bg-indigo-600 text-white rounded-lg text-lg font-medium hover:bg-blue-700 transition">
-            Get Started
+          <button onClick={()=>navigate("/dashboard")} className="mt-8 px-6 py-3 bg-indigo-600 text-white rounded-lg text-lg font-medium hover:bg-blue-700 transition">
+            Try Out
           </button>
         </div>
 

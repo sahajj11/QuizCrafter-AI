@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
 
       {/* Right - Login */}
-      <button  onClick={()=>navigate("/login")} className="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+      <button  onClick={()=>navigate("/login")} className="px-5 cursor-pointer py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
         Login
       </button>
     </nav>

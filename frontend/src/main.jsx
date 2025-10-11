@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import SignUp from './pages/SignUp.jsx'
 import Dashboard from './pages/Dashboard.jsx'
+import CreateQuizPage from './components/Quiz.jsx'
+import ChatQuizCreator from './components/Quiz.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -16,6 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/quiz" element={<ChatQuizCreator />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
